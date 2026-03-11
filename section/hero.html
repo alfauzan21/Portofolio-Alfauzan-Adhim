@@ -1,88 +1,139 @@
-    <section id="hero" class="hero section">
-        <!-- Glowing Background Orbs -->
-        <div class="hero-bg-blobs">
-            <div class="blob blob-1"></div>
-            <div class="blob blob-2"></div>
+<section id="hero" class="hero section">
+  <!-- Glowing Background Orbs -->
+  <div class="hero-bg-blobs">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+  </div>
+  <div class="hero-container">
+    <div class="hero-main-grid">
+      <!-- Kolom Kiri: Teks & Socials -->
+      <div class="hero-content-left fade-up">
+        <h1 class="hero-title">Alfauzan<br /><span>Adhim</span></h1>
+        <div class="hero-divider"></div>
+
+        <div class="hero-typing-wrapper">
+          <span class="typing-static">Saya seorang </span>
+          <div class="typing-box">
+            <span class="typing-text" id="typingText"></span
+            ><span class="cursor"></span>
+          </div>
         </div>
-        <div class="hero-container">
-            <div class="hero-main-grid">
-                
-                <!-- Kolom Kiri: Teks & Socials -->
-                <div class="hero-content-left fade-up">
-                    <h1 class="hero-title">Alfauzan<br><span>Adhim</span></h1>
-                    <div class="hero-divider"></div>
-                    
-                    <div class="hero-typing-wrapper">
-                        <span class="typing-static">Saya seorang </span>
-                        <div class="typing-box">
-                            <span class="typing-text" id="typingText"></span><span class="cursor"></span>
-                        </div>
-                    </div>
-                    
-                    <p class="hero-desc">Seseorang yang antusias dalam merancang antarmuka visual (UI/UX), membangun sistem terstruktur sebagai Admin Dashboard, serta meracik kode sebagai Web Developer Junior. Memiliki hasrat mendalam di dunia Videografi & Fotografi untuk mengabadikan setiap cerita digital Anda dengan apik.</p>
-                    
-                    <!-- Social Pills dipindah ke bawah teks (kiri) -->
-                    <div class="hero-social-bar fade-up delay-3">
-                        <div class="social-pills-container">
-                            <!-- LinkedIn -->
-                            <a href="#" class="social-pill ripple">
-                                <div class="social-icon-box bg-linkedin"><i class="ph-fill ph-linkedin-logo"></i></div>
-                                <span>Linkedin</span>
-                            </a>
-                            <!-- Instagram -->
-                            <a href="#" class="social-pill ripple">
-                                <div class="social-icon-box bg-instagram"><i class="ph-fill ph-instagram-logo"></i></div>
-                                <span>Instagram</span>
-                            </a>
-                            <!-- Facebook -->
-                            <a href="#" class="social-pill ripple">
-                                <div class="social-icon-box bg-facebook"><i class="ph-fill ph-facebook-logo"></i></div>
-                                <span>Facebook</span>
-                            </a>
-                            <!-- TikTok -->
-                            <a href="#" class="social-pill ripple">
-                                <div class="social-icon-box bg-tiktok"><i class="ph-fill ph-tiktok-logo"></i></div>
-                                <span>TikTok</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
 
-                <!-- Kolom Kanan: Gambar & Stats Tertumpuk -->
-                <div class="hero-profile-right fade-up delay-1">
-                    <div class="profile-image-container">
-                        <!-- Foto User -->
-                        <img src="assets/Image/foto1.png" alt="Foto Profil Alfauzan Cutout" class="profile-img">
-                    </div>
-                    
-                    <!-- Floating Elements Container -->
-                    <div class="floating-elements">
-                        <div class="floating-stat stat-projects">
-                            <span class="stat-label">Finish Project</span>
-                            <span class="stat-value">10+</span>
-                        </div>
-                        
-                        <div class="floating-stat stat-experience">
-                            <span class="stat-label">Years of Experience</span>
-                            <span class="stat-value">2+</span>
-                        </div>
+        <p class="hero-desc">
+          Seseorang yang antusias dalam merancang antarmuka visual (UI/UX),
+          membangun sistem terstruktur sebagai Admin Dashboard, serta meracik
+          kode sebagai Web Developer Junior. Memiliki hasrat mendalam di dunia
+          Videografi & Fotografi untuk mengabadikan setiap cerita digital Anda
+          dengan apik.
+        </p>
 
-                        <div class="floating-stat stat-clients">
-                            <span class="stat-label">Client</span>
-                            <span class="stat-value">5+</span>
-                        </div>
+        <!-- Social Pills dipindah ke bawah teks (kiri) -->
+        <div class="hero-social-bar fade-up delay-3">
+          <div class="social-pills-container">
+            <!-- LinkedIn -->
+            <a
+              href="https://www.linkedin.com/in/alfauzan-adhim-47917a34b/"
+              class="social-pill ripple"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div class="social-icon-box bg-linkedin">
+                <i class="ph-fill ph-linkedin-logo"></i>
+              </div>
+              <span>Linkedin</span>
+            </a>
+            <!-- Instagram -->
+            <a
+              href="https://www.instagram.com/xalpauu._/"
+              class="social-pill ripple"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div class="social-icon-box bg-instagram">
+                <i class="ph-fill ph-instagram-logo"></i>
+              </div>
+              <span>Instagram</span>
+            </a>
+            <!-- Facebook -->
+            <a href="#" class="social-pill ripple">
+              <div class="social-icon-box bg-facebook">
+                <i class="ph-fill ph-facebook-logo"></i>
+              </div>
+              <span>Facebook</span>
+            </a>
+            <!-- TikTok -->
+            <a href="#" class="social-pill ripple">
+              <div class="social-icon-box bg-tiktok">
+                <i class="ph-fill ph-tiktok-logo"></i>
+              </div>
+              <span>TikTok</span>
+            </a>
+          </div>
+        </div>
+      </div>
 
-                        <div class="floating-contact">
-                            <!-- Arrow Decorative -->
-                            <svg width="60" height="100" viewBox="0 0 60 100" fill="none" class="arrow-decoration" aria-hidden="true">
-                                <path d="M20 10 Q60 40 40 70 T45 90" stroke="var(--text-primary)" stroke-width="2" fill="none" stroke-linecap="round"/>
-                                <path d="M35 85 L45 90 L40 100" stroke="var(--text-primary)" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            <a href="#contact" class="btn btn-outline-pill ripple">Contact me <i class="ph-bold ph-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </div>
+      <!-- Kolom Kanan: Gambar & Stats Tertumpuk -->
+      <div class="hero-profile-right fade-up delay-1">
+        <div class="profile-image-container">
+          <!-- Foto User -->
+          <img
+            src="assets/Image/foto1.png"
+            alt="Foto Profil Alfauzan Cutout"
+            class="profile-img"
+          />
+        </div>
 
-            </div> <!-- End Main Grid -->
-        </div> <!-- End Hero Container -->
-    </section>
+        <!-- Floating Elements Container -->
+        <div class="floating-elements">
+          <div class="floating-stat stat-projects">
+            <span class="stat-label">Finish Project</span>
+            <span class="stat-value">10+</span>
+          </div>
+
+          <div class="floating-stat stat-experience">
+            <span class="stat-label">Years of Experience</span>
+            <span class="stat-value">2+</span>
+          </div>
+
+          <div class="floating-stat stat-clients">
+            <span class="stat-label">Client</span>
+            <span class="stat-value">5+</span>
+          </div>
+
+          <div class="floating-contact">
+            <!-- Arrow Decorative -->
+            <svg
+              width="60"
+              height="100"
+              viewBox="0 0 60 100"
+              fill="none"
+              class="arrow-decoration"
+              aria-hidden="true"
+            >
+              <path
+                d="M20 10 Q60 40 40 70 T45 90"
+                stroke="var(--text-primary)"
+                stroke-width="2"
+                fill="none"
+                stroke-linecap="round"
+              />
+              <path
+                d="M35 85 L45 90 L40 100"
+                stroke="var(--text-primary)"
+                stroke-width="2"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <a href="#contact" class="btn btn-outline-pill ripple"
+              >Contact me <i class="ph-bold ph-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Main Grid -->
+  </div>
+  <!-- End Hero Container -->
+</section>
