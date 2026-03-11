@@ -1,0 +1,128 @@
+body {
+  min-height: 100vh;
+  margin: 0;
+  background: linear-gradient(180deg, #222222, #0072ff);
+  background-size: 300% 300%;
+  animation: gradientMove 12s ease infinite;
+  color: white;
+}
+
+/* Navbar */
+.custom-navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 30px;
+  background: rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(10px);
+  gap: 30px;
+}
+
+.navbar-menu {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.navbar-menu a {
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+  transition: 0.3s ease;
+  position: relative;
+}
+
+.navbar-menu a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  transition: width 0.3s ease-in-out;
+}
+
+.navbar-menu a:hover::after {
+  width: 100%;
+}
+
+/* Button */
+.button-btn {
+  display: inline-block;
+  padding: 8px 18px;
+  border-radius: 50px;
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+  border: 2px solid #ffffff;
+  background-color: transparent;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.button-btn:hover {
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  border: 2px solid #ffffff;
+  box-shadow: 0 4px 15px rgba(0, 114, 255, 0.5);
+  transform: translateY(-2px);
+}
+
+/* Hero section */
+.hero {
+  display: flex;
+  align-items: center;
+  min-height: calc(100vh - 100px);
+  padding: 0 5%;
+}
+
+.hero-content {
+  max-width: 500px;
+  text-align: center;
+}
+
+.hero-content .Me2 {
+  background: linear-gradient(270deg, #00c6ff, #0072ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientMove 6s ease infinite;
+  font-weight: bold;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.hero p {
+  font-size: 1.3rem;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* Typing effect */
+.typing {
+  border-right: 2px solid white;
+  font-weight: 700;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+  0%,
+  50%,
+  100% {
+    border-color: transparent;
+  }
+  25%,
+  75% {
+    border-color: white;
+  }
+}
+

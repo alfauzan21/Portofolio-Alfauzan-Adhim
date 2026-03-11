@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alfauzan Adhim | Junior Web Developer & Videographer</title>
+    
+    <!-- Google Fonts: Inter untuk teks, Montserrat untuk Heading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Phosphor Icons: Ikon premium & elegan -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Animasi Background Cinematic -->
+    <div class="cinematic-bg">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
+
+    <!-- Tombol Back to Top -->
+    <button id="backToTop" class="back-to-top" aria-label="Kembali ke atas">
+        <i class="ph-bold ph-arrow-up"></i>
+    </button>
+
+    <!-- Navbar -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="logo">Alfauzan.<span>dev</span></a>
+            
+            <ul class="nav-links">
+                <li><a href="#about" class="nav-item">About</a></li>
+                <li><a href="#skills" class="nav-item">Skills</a></li>
+                <li><a href="#services" class="nav-item">Services</a></li>
+                <li class="dropdown">
+                    <a href="#projects" class="nav-item">Projects <i class="ph-bold ph-caret-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#projects" class="dropdown-item" data-nav-filter="all">All Projects</a></li>
+                        <li><a href="#projects" class="dropdown-item" data-nav-filter="website">Website</a></li>
+                        <li><a href="#projects" class="dropdown-item" data-nav-filter="fotografer">Fotografer</a></li>
+                        <li><a href="#projects" class="dropdown-item" data-nav-filter="videografer">Videografer</a></li>
+                    </ul>
+                </li>
+                <li><a href="#video" class="nav-item">Videos</a></li>
+            </ul>
+            
+            <div class="nav-actions">
+                <a href="#contact" class="btn btn-outline ripple">Contact Me</a>
+                <button class="hamburger" id="hamburger" aria-label="Toggle Menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-links">
+            <a href="#hero">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#services">Services</a>
+            <div class="mobile-dropdown">
+                <button class="mobile-dropdown-toggle">Projects <i class="ph-bold ph-caret-down"></i></button>
+                <div class="mobile-dropdown-menu">
+                    <a href="#projects" class="dropdown-item" data-nav-filter="all">All Projects</a>
+                    <a href="#projects" class="dropdown-item" data-nav-filter="website">Website</a>
+                    <a href="#projects" class="dropdown-item" data-nav-filter="fotografer">Fotografer</a>
+                    <a href="#projects" class="dropdown-item" data-nav-filter="videografer">Videografer</a>
+                </div>
+            </div>
+            <a href="#video">Videos</a>
+            <a href="#contact" class="btn btn-primary ripple text-center" style="margin-top: 1rem;">Contact Me</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <div data-include="section/hero.html"></div>
+
+    <!-- About Section -->
+    <div data-include="section/about.html"></div>
+
+    <!-- Skills Section -->
+    <div data-include="section/skills.html"></div>
+
+    <!-- Services Section -->
+    <div data-include="section/services.html"></div>
+
+    <!-- Projects Section -->
+    <div data-include="section/projects.html"></div>
+
+    <!-- Video Portfolio Section -->
+    <div data-include="section/video.html"></div>
+
+    <!-- Contact Section -->
+    <div data-include="section/contact.html"></div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <h3>Alfauzan.<span>dev</span></h3>
+                <p>Membangun dunia digital dengan kode bersih dan visual sinematik.</p>
+            </div>
+            
+            <div class="footer-social">
+                <a href="#" class="social-link" aria-label="Instagram"><i class="ph-fill ph-instagram-logo"></i></a>
+                <a href="#" class="social-link" aria-label="LinkedIn"><i class="ph-fill ph-linkedin-logo"></i></a>
+                <a href="#" class="social-link" aria-label="GitHub"><i class="ph-fill ph-github-logo"></i></a>
+                <a href="#" class="social-link" aria-label="YouTube"><i class="ph-fill ph-youtube-logo"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Alfauzan Adhim. All Rights Reserved. Crafted with Vanilla Tools.</p>
+        </div>
+    </footer>
+
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+</body>
+</html>
+
