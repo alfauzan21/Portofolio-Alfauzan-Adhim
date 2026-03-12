@@ -2,14 +2,14 @@
    Variables & Reset
    ========================================================================= */
 :root {
-    --bg-dark: #0f0f0f;
-    --bg-surface: #1a1a1a;
-    --bg-glass: rgba(26, 26, 26, 0.6);
-    --border-glass: rgba(255, 255, 255, 0.08);
-    --accent-blue: #00e5ff;
-    --accent-purple: #b026ff;
-    --text-primary: #ffffff;
-    --text-muted: #a0a0a0;
+    --bg-dark: #ffffff;
+    --bg-surface: #f8f9fa;
+    --bg-glass: rgba(255, 255, 255, 0.8);
+    --border-glass: rgba(0, 0, 0, 0.1);
+    --accent-blue: #00b8d4;
+    --accent-purple: #9c27b0;
+    --text-primary: #111111;
+    --text-muted: #666666;
     --font-heading: 'Montserrat', sans-serif;
     --font-body: 'Inter', sans-serif;
     --transition-fast: 0.3s ease;
@@ -423,7 +423,7 @@ ul {
     gap: 1rem;
     margin-top: 1rem;
     padding: 1rem;
-    background: rgba(255,255,255,0.03);
+    background: rgba(0,0,0,0.03);
     border-radius: var(--radius-md);
     width: 80%;
 }
@@ -603,16 +603,16 @@ ul {
 }
 .floating-stat {
     position: absolute;
-    background: rgba(26, 26, 26, 0.4);
+    background: var(--bg-glass);
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
-    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid var(--border-glass);
+    border-top: 1px solid var(--border-glass);
+    border-left: 1px solid var(--border-glass);
     padding: 1.2rem 2rem;
     border-radius: 20px;
     text-align: center;
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5), inset 0 0 20px rgba(255, 255, 255, 0.05);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1), inset 0 0 20px rgba(0, 0, 0, 0.05);
     pointer-events: auto;
     animation: floatingObj 6s infinite ease-in-out alternate;
     white-space: nowrap;
@@ -687,10 +687,10 @@ ul {
     align-items: center;
     gap: 10px;
     padding: 1rem 2.2rem;
-    border: 1px solid rgba(255, 255, 255, 0.4);
+    border: 1px solid var(--border-glass);
     border-radius: 50px;
     color: var(--text-primary);
-    background: rgba(255, 255, 255, 0.03);
+    background: var(--bg-surface);
     backdrop-filter: blur(10px);
     font-family: var(--font-heading);
     font-weight: 600;
@@ -916,7 +916,7 @@ ul {
 .progress-bg {
     width: 100%;
     height: 6px;
-    background: rgba(255, 255, 255, 0.1);
+    background: var(--border-glass);
     border-radius: 3px;
     overflow: hidden;
 }
@@ -947,7 +947,7 @@ ul {
 }
 .service-card:hover {
     transform: translateY(-10px);
-    background: rgba(40,40,40,0.8);
+    background: #ffffff;
     border-color: var(--accent-purple);
     box-shadow: var(--glow-purple);
 }
@@ -1038,7 +1038,7 @@ ul {
 .project-overlay {
     position: absolute;
     inset: 0;
-    background: rgba(15, 15, 15, 0.8);
+    background: rgba(255, 255, 255, 0.9);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1193,7 +1193,7 @@ ul {
     padding: 1rem 0;
     background: transparent;
     border: none;
-    border-bottom: 1px solid rgba(255,255,255,0.2);
+    border-bottom: 1px solid var(--border-glass);
     color: var(--text-primary);
     font-size: 1rem;
     font-family: var(--font-body);
