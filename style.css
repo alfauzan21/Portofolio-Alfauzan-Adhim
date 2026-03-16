@@ -334,6 +334,21 @@ ul {
     color: var(--accent-blue);
 }
 
+/* Sub-dropdown */
+.dropdown-submenu {
+    position: relative;
+}
+.dropdown-submenu .sub-menu {
+    top: 0;
+    left: 100%;
+    transform: translateX(15px);
+}
+.dropdown-submenu:hover .sub-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+}
+
 .nav-actions {
     display: flex;
     align-items: center;

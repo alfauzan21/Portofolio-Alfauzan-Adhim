@@ -176,15 +176,17 @@ function initPortfolio() {
     });
 
     // Mobile Dropdown Toggle
-    const mobileDropdownToggle = document.querySelector('.mobile-dropdown-toggle');
-    const mobileDropdownMenu = document.querySelector('.mobile-dropdown-menu');
+    const mobileDropdownToggles = document.querySelectorAll('.mobile-dropdown-toggle');
     
-    if (mobileDropdownToggle && mobileDropdownMenu) {
-        mobileDropdownToggle.addEventListener('click', (e) => {
+    mobileDropdownToggles.forEach(toggle => {
+        toggle.addEventListener('click', (e) => {
             e.preventDefault();
-            mobileDropdownMenu.classList.toggle('active');
+            const menu = toggle.nextElementSibling;
+            if (menu && menu.classList.contains('mobile-dropdown-menu')) {
+                menu.classList.toggle('active');
+            }
         });
-    }
+    });
 
     /* =========================================================================
        Intersection Observer (Scroll Reveal & Progress Bar)

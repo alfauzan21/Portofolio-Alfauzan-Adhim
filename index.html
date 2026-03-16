@@ -43,7 +43,15 @@
                     <a href="#projects" class="nav-item">Projects <i class="ph-bold ph-caret-down"></i></a>
                     <ul class="dropdown-menu">
                         <li><a href="#projects" class="dropdown-item" data-nav-filter="all">All Projects</a></li>
-                        <li><a href="#projects" class="dropdown-item" data-nav-filter="website">Website</a></li>
+                        <li class="dropdown-submenu">
+                            <a href="#" class="dropdown-item">Website <i class="ph-bold ph-caret-right" style="float: right; margin-top: 3px;"></i></a>
+                            <ul class="dropdown-menu sub-menu">
+                                <li><a href="website/admin/index.html" class="dropdown-item">Admin</a></li>
+                                <li><a href="website/corporate/index.html" class="dropdown-item">Corporate</a></li>
+                                <li><a href="website/e-commerce/index.html" class="dropdown-item">E-Commerce</a></li>
+                                <li><a href="website/portfolio/index.html" class="dropdown-item">Portfolio</a></li>
+                            </ul>
+                        </li>
                         <li><a href="#projects" class="dropdown-item" data-nav-filter="fotografer">Fotografer</a></li>
                         <li><a href="#projects" class="dropdown-item" data-nav-filter="videografer">Videografer</a></li>
                     </ul>
@@ -73,7 +81,15 @@
                 <button class="mobile-dropdown-toggle">Projects <i class="ph-bold ph-caret-down"></i></button>
                 <div class="mobile-dropdown-menu">
                     <a href="#projects" class="dropdown-item" data-nav-filter="all">All Projects</a>
-                    <a href="#projects" class="dropdown-item" data-nav-filter="website">Website</a>
+                    <div class="mobile-dropdown submenu">
+                        <button class="mobile-dropdown-toggle submenu-toggle" style="font-size: 1.1rem; padding: 0.5rem; width: 100%; justify-content: center;">Website <i class="ph-bold ph-caret-down"></i></button>
+                        <div class="mobile-dropdown-menu submenu-menu" style="background: rgba(0,0,0,0.05); margin-top: 0.5rem;">
+                            <a href="website/admin/index.html" class="dropdown-item">Admin</a>
+                            <a href="website/corporate/index.html" class="dropdown-item">Corporate</a>
+                            <a href="website/e-commerce/index.html" class="dropdown-item">E-Commerce</a>
+                            <a href="website/portfolio/index.html" class="dropdown-item">Portfolio</a>
+                        </div>
+                    </div>
                     <a href="#projects" class="dropdown-item" data-nav-filter="fotografer">Fotografer</a>
                     <a href="#projects" class="dropdown-item" data-nav-filter="videografer">Videografer</a>
                 </div>

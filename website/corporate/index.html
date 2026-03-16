@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corporate Projects | Alfauzan Adhim</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="../../style.css">
+    <style>
+        .category-header {
+            padding: 150px 0 50px;
+            text-align: center;
+        }
+        .category-header h1 {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            margin-bottom: 1rem;
+        }
+        .category-header p {
+            color: var(--text-muted);
+        }
+    </style>
+</head>
+<body>
+    <div class="cinematic-bg">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+    </div>
+
+    <!-- Simple Navbar -->
+    <nav class="navbar scrolled">
+        <div class="nav-container">
+            <a href="../../index.html" class="logo">Alfaa.<span>Dev</span></a>
+            <div class="nav-actions">
+                <a href="../../index.html" class="btn btn-outline" style="padding: 0.5rem 1rem;">
+                    <i class="ph-bold ph-arrow-left" style="margin-right: 8px;"></i> Back to Home
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container section category-header">
+        <h1>Corporate <span>Projects</span></h1>
+        <p>Halaman pendaratan perusahaan dan sistem website corporate.</p>
+    </div>
+
+    <div class="container section">
+        <div class="projects-grid">
+            <!-- Game Kulino Card -->
+            <div class="project-card reveal">
+                <div class="project-image">
+                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&h=400&fit=crop" alt="Web Game">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="#" class="btn-icon ripple"><i class="ph-bold ph-link"></i></a>
+                            <a href="#" class="btn-icon ripple"><i class="ph-bold ph-github-logo"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Web Game Kulino</h3>
+                    <p>Website Game Kulino adalah platform web interaktif untuk bermain game in-browser dengan sistem e-commerce.</p>
+                    <div class="tech-stack">
+                        <span class="tech-badge">Laravel</span>
+                        <span class="tech-badge">JavaScript</span>
+                    </div>
+                    <a href="web-game.html" class="btn btn-primary" style="margin-top: 1.5rem; padding: 0.5rem 1.5rem; font-size: 0.9rem; width: 100%;">Show More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        document.querySelectorAll('.reveal').forEach((el, index) => {
+            setTimeout(() => {
+                el.classList.add('active');
+            }, 100 + (index * 200));
+        });
+    </script>
+</body>
+</html>
