@@ -339,14 +339,15 @@ ul {
     position: relative;
 }
 .dropdown-submenu .sub-menu {
-    top: 0;
+    top: -10px;
     left: 100%;
-    transform: translateX(15px);
+    margin-left: 5px;
+    transform: translateX(10px) translateY(0);
 }
 .dropdown-submenu:hover .sub-menu {
     opacity: 1;
     visibility: visible;
-    transform: translateX(0);
+    transform: translateX(0) translateY(0);
 }
 
 .nav-actions {
