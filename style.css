@@ -315,7 +315,7 @@ ul {
     flex-direction: column;
     z-index: 1000;
 }
-.dropdown:hover .dropdown-menu {
+.dropdown:hover > .dropdown-menu {
     opacity: 1;
     visibility: visible;
     transform: translateX(-50%) translateY(0);
