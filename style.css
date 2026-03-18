@@ -180,6 +180,7 @@ ul {
 
 /* Cinematic Background Gradient Orbs */
 .cinematic-bg {
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
@@ -475,6 +476,7 @@ ul {
 
 /* Hero Background Blobs */
 .hero-bg-blobs {
+    display: none;
     position: absolute;
     top: 0;
     left: 0;
